@@ -2,12 +2,13 @@
 
 ScalarConverter::ScalarConverter() {}
 
-ScalarConverter & ScalarConverter::operator = (const ScalarConverter & other) {
+ScalarConverter& ScalarConverter::operator = (const ScalarConverter& other) {
     if(this != &other) {}
     return *this;
 }
 
-ScalarConverter::ScalarConverter(const ScalarConverter & other) { * this = other;
+ScalarConverter::ScalarConverter(const ScalarConverter& other) {
+	*this = other;
 }
 
 ScalarConverter:: ~ ScalarConverter() {}

@@ -3,7 +3,7 @@
 
 Serializer::Serializer() {}
 
-Serializer& Serializer::operator = (const Serializer& other) {
+Serializer& Serializer::operator=(const Serializer& other) {
     if(this != &other) {}
     return *this;
 }
