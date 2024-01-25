@@ -39,18 +39,18 @@ void ScalarConverter::convert(const std::string& input) {
 	// Float
 	std::cout << "float: ";
 	if (std::isnan(value) || std::isinf(value))
-		std::cout << static_cast<float>(value) << "f" << std::endl;
+		std::cout << std::showpos << static_cast<float>(value) << "f" << std::noshowpos << std::endl;
 	else if (static_cast<float>(value) == static_cast<int64_t>(static_cast<float>(value)))
 		std::cout << static_cast<float>(value) << ".0f" << std::endl;
 	else
-		std::cout << std::setprecision(5) << static_cast<float>(value) << "f" << std::endl;
+		std::cout << std::setprecision(9) << static_cast<float>(value) << "f" << std::endl;
 
 	// Double
 	std::cout << "double: ";
 	if (std::isnan(value) || std::isinf(value))
-		std::cout << static_cast<double>(value) << std::endl;
+		std::cout << std::showpos << static_cast<double>(value) << std::noshowpos << std::endl;
 	else if (static_cast<double>(value) == static_cast<int64_t>(static_cast<double>(value)))
 		std::cout << static_cast<double>(value) << ".0" << std::endl;
 	else
-		std::cout << std::setprecision(5) << static_cast<double>(value) << std::endl;
+		std::cout << std::setprecision(17) << static_cast<double>(value) << std::endl;
 }
