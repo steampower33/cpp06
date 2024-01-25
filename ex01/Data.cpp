@@ -20,4 +20,3 @@ Data::Data(const Data & other) {
 }
 
 Data:: ~ Data() {}
-
