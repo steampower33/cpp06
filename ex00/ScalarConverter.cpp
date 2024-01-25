@@ -17,7 +17,7 @@ void ScalarConverter::convert(const std::string& input) {
 	char* endptr;
     double value;
 	
-	value = std::strtod(input.c_str(), &endptr);
+	value = strtod(input.c_str(), &endptr);
 
 	// Char
 	std::cout << "char: ";
